@@ -1,5 +1,14 @@
 <h2>Frontend service auto: Angular</h2>
 
+<h2>1.Initializare proiect</h>
+<h5>Comenzi:</h5>
+<ul>
+    <li>npm install
+    <li>npm start
+    <li>"http://localhost:4200" in browser
+</ul>
+
+<h2>2.Functionalitati</h2>
 <p>Acest proiect implementeaza urmatoarele functionalitati:</p>
 <h3>Clienti</h3>
 <ul>
@@ -16,6 +25,7 @@
     <li>La stergerea unei masini programarile asociate vor fi sterse deasemenea.
     <li>Realizarea unei programari pentru o masina.
     <li>Accesarea unei colectii de masini a unui client inactiv sau inexistent rezulta in redirectionarea catre pagina principala.
+    <li>Validatori custom pentru completare optionala a campurilor: "cai putere" si "kW".
 </ul>
 <h3>Programari</h3>
 <ul>
@@ -23,6 +33,7 @@
     <li> Update pentru sosirea vehiculului la programare.
     <li> Update pentru procesarea vehiculului pe perioada programarii.
     <li> Trimiterea informatiilor catre istoric (create istoric).
+    <li> Validatori custom pentru data si ora programarii.
 </ul>
 <h3>Istoric</h3>
 <ul>
@@ -36,5 +47,19 @@
     <li>Incarcare rapida a paginilor.
     <li>Stilizare realizata cu scss.
 </ul>
+<h3>Design</h3>
+<p align="center">
+  <img src="./images/clients.png" width="500" alt="clients preview" />
+  Clients page
+</p>
+<p align="center">
+  <img src="./images/car_form.png" width="500" alt="add car form" />
+  Add car form
+</p>
+<p align="center">
+  <img src="./images/user_assistance.png" width="500" alt="helpful user messages" />
+  Helpful messages for users (edited)
+</p>
+
 <h4>Anexe</h4>
 - versiunea folosita de node se gaseste in "node.nvmrc"

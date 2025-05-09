@@ -5,6 +5,7 @@
 <ul>
     <li>Citirea, adaugarea, editarea, stergerea clientilor.
     <li>Dezactivarea contului unui client (pana la reactivare nu poate fi modificat si sunt sterse programarile sale).
+    <li>La stergerea unui client programarile asociate vor fi sterse deasemenea.
     <li>Vizualizarea masinilor clientului.
 </ul>
 <h3>Masini</h3>
@@ -12,6 +13,7 @@
     <li> Citirea, adaugarea, editarea, stergerea masinilor unui client.
     <li> La stergerea ultimei masini clientul este sters deasemenea. (Un client are minim o masina)
     <li>Dezactivarea masinii unui client(pana la reactivare nu poate fi modificata si sunt sterse programarile asociate ei).
+    <li>La stergerea unei masini programarile asociate vor fi sterse deasemenea.
     <li>Realizarea unei programari pentru o masina.
     <li>Accesarea unei colectii de masini a unui client inactiv sau inexistent rezulta in redirectionarea catre pagina principala.
 </ul>

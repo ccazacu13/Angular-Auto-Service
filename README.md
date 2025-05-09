@@ -50,15 +50,15 @@
 <h3>Design</h3>
 <p align="center">
   <img src="./images/clients.png" width="500" alt="clients preview" />
-  Clients page
+  <p>Clients page</p>
 </p>
 <p align="center">
   <img src="./images/car_form.png" width="500" alt="add car form" />
-  Add car form
+  <p>Add car form</p>
 </p>
 <p align="center">
   <img src="./images/user_assistance.png" width="500" alt="helpful user messages" />
-  Helpful messages for users (edited)
+  <p>Helpful messages for users (edited)</p>
 </p>
 
 <h4>Anexe</h4>

@@ -1,0 +1,294 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.alert{
+    color:red;
+}
+
+.client-add-edit-form{
+    input{
+        width: 50%;
+        align-self: center;
+    }
+    button{
+        width: 10%;
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    span{
+        text-align: center;
+        font-size: 2em;
+    }
+    font-family: sans-serif;
+    background-color: #D3D3D3;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.client-page-content{
+    height: 100%;
+    width: 100%;
+}
+
+.client-options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-client-container {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto 10px;
+  }
+  
+  .add-client-btn {
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s;
+  
+    &:hover {
+      background-color: #218838;
+      transform: translateY(-2px);
+    }
+  
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+
+  .client-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    position:relative;
+    left: 2%;
+
+    &.active{
+        .action-btn {
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+            white-space: nowrap;
+        
+            &:hover {
+              transform: translateY(-2px);
+            }
+        
+            &:active {
+              transform: scale(0.97);
+            }
+      
+        
+            &.edit {
+      
+              background-color: #ffc107;
+              color: #212529;
+        
+              &:hover {
+                background-color: #e0a800;
+              }
+            }
+        
+            &.status {
+              background-color: #17a2b8;
+        
+              &:hover {
+                background-color: #138496;
+              }
+            }
+        
+            &.delete {
+              background-color: #dc3545;
+        
+              &:hover {
+                background-color: #bd2130;
+              }
+            }
+          }
+        }
+
+    &.inactive{
+        .action-btn {
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+            white-space: nowrap;
+        
+            &:active {
+              transform: scale(0.97);
+            }
+      
+        
+            &.edit {
+      
+              background-color: #5f7389;
+        
+              &:hover {
+                background-color: #5f7389;
+              }
+            }
+        
+            &.status {
+              background-color: #17a2b8;
+        
+              &:hover {
+                background-color: #138496;
+              }
+            }
+        
+            &.delete {
+              background-color: #5f7389;
+        
+              &:hover {
+                background-color: #5f7389;
+              }
+            }
+          }
+        }
+    }
+
+    .modal-overlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top : 0;
+        left : 0;
+        display:flex;
+        background-color: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+  
+    .modal {
+        background: white;
+        padding: 30px;
+        border-radius: 16px;
+        width: 40%;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 0.3s ease;
+
+      
+        h2 {
+          margin-top: 0;
+          margin-bottom: 20px;
+          font-size: 24px;
+          text-align: center;
+        }
+      
+        .form-group {
+          margin-bottom: 15px;
+      
+          label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+          }
+      
+          input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+      
+            &:focus {
+              outline: none;
+              border-color: #007bff;
+            }
+          }
+        }
+      
+        .form-actions {
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+      
+          .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+      
+            &:hover {
+              background-color: #218838;
+            }
+          }
+      
+          .cancel-btn {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+      
+            &:hover {
+              background-color: #5a6268;
+            }
+          }
+        }
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+  
+      .info-box {
+        background-color: #e2ffcd;
+        color: #18560a;
+        border: 1px solid #baffbf;
+        padding: 16px 20px;
+        border-radius: 12px;
+        font-size: 15px;
+        line-height: 1.4;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      
+        strong {
+          font-weight: bold;
+        }
+      
+        &::before {
+          content: 'ℹ️';
+          font-size: 18px;
+        }
+      }
+        

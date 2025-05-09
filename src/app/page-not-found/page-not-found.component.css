@@ -1,0 +1,58 @@
+.not-found-container {
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
+
+.not-found-container .error-code {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #0077cc;
+  -webkit-animation: float 2.5s ease-in-out infinite;
+          animation: float 2.5s ease-in-out infinite;
+}
+
+.not-found-container .message {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.not-found-container .home-link {
+  margin-top: 2rem;
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.not-found-container .home-link:hover {
+  background-color: #005999;
+}
+
+@-webkit-keyframes float {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+/*# sourceMappingURL=page-not-found.component.css.map */

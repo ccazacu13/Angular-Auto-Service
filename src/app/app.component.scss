@@ -1,0 +1,41 @@
+.brand-logo{
+    position: relative;
+}
+
+$primary-color: #2d6cdf;
+$text-color: #333;
+$background-color: #e0efff;
+$hover-color: darken($primary-color, 10%);
+$shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: $background-color;
+  box-shadow: $shadow;
+
+  &__brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    li a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.car-card {
+    flex-direction: column;
+    width: 95vw;
+    height: 15vw;
+    overflow: scroll;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px auto;
+    transition: transform 0.2s ease;
+
+    &.inactive{
+        background-color: rgb(253, 193, 193);
+    }
+  
+    &:hover {
+      transform: translateY(-4px);
+    }
+  
+    .card-status {
+      background: #2c2c2c;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: flex-end;
+  
+      .status {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 10px;
+        color: white;
+  
+        &.active {
+          background-color: #28a745;
+        }
+  
+        &.inactive {
+          background-color: #c0392b;
+        }
+      }
+    }
+  
+    .card-details {
+      
+      
+
+      .card-info {
+        
+        padding-left: 20px;
+        flex: 1;
+  
+        h2 {
+          margin: 0 0 4px;
+          font-size: 18px;
+          color: #333;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #555;
+        }
+      }
+  
+    }
+}

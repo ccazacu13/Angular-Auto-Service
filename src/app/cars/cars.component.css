@@ -1,0 +1,461 @@
+@charset "UTF-8";
+.alert-danger {
+  color: red;
+}
+
+.add-car-container {
+  width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px auto 10px;
+}
+
+.add-car-btn {
+  padding: 14px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.add-car-btn:hover {
+  background-color: #218838;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.add-car-btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.warning-box strong {
+  font-weight: bold;
+}
+
+.warning-box::before {
+  content: '⚠️';
+  font-size: 18px;
+}
+
+.car-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  left: 2%;
+}
+
+.car-actions.active .action-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s, -webkit-transform 0.2s;
+  white-space: nowrap;
+}
+
+.car-actions.active .action-btn:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.car-actions.active .action-btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.car-actions.active .action-btn.edit {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.car-actions.active .action-btn.edit:hover {
+  background-color: #e0a800;
+}
+
+.car-actions.active .action-btn.status {
+  background-color: #17a2b8;
+}
+
+.car-actions.active .action-btn.status:hover {
+  background-color: #138496;
+}
+
+.car-actions.active .action-btn.delete {
+  background-color: #dc3545;
+}
+
+.car-actions.active .action-btn.delete:hover {
+  background-color: #bd2130;
+}
+
+.car-actions.active .action-btn.appointment {
+  background-color: #7c33fb;
+}
+
+.car-actions.active .action-btn.appointment:hover {
+  background-color: #c31dff;
+}
+
+.car-actions.inactive .action-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s, -webkit-transform 0.2s;
+  white-space: nowrap;
+}
+
+.car-actions.inactive .action-btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.car-actions.inactive .action-btn.edit {
+  background-color: #5f7389;
+}
+
+.car-actions.inactive .action-btn.edit:hover {
+  background-color: #5f7389;
+}
+
+.car-actions.inactive .action-btn.status {
+  background-color: #17a2b8;
+}
+
+.car-actions.inactive .action-btn.status:hover {
+  background-color: #138496;
+}
+
+.car-actions.inactive .action-btn.delete {
+  background-color: #5f7389;
+}
+
+.car-actions.inactive .action-btn.delete:hover {
+  background-color: #5f7389;
+}
+
+.car-actions.inactive .action-btn.appointment {
+  background-color: #5f7389;
+}
+
+.car-actions.inactive .action-btn.appointment:hover {
+  background-color: #5f7389;
+}
+
+.modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  max-height: 80%;
+  width: 40%;
+  -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  -webkit-animation: fadeIn 0.3s ease;
+          animation: fadeIn 0.3s ease;
+  overflow: scroll;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal .form-group {
+  margin-bottom: 15px;
+}
+
+.modal .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.modal .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.modal .form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.modal .form-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal .form-actions .submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal .form-actions .submit-btn:hover {
+  background-color: #218838;
+}
+
+.modal .form-actions .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal .form-actions .cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='%23666' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  cursor: pointer;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.custom-select:focus {
+  border-color: #007bff;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.appointment-form {
+  background-color: #ffffff;
+  width: 90vw;
+  margin: 40px auto;
+  padding: 30px 25px;
+  border-radius: 18px;
+  -webkit-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.appointment-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.appointment-form .form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.appointment-form .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+.appointment-form .form-group input,
+.appointment-form .form-group select {
+  width: 90%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.appointment-form .form-group input:focus,
+.appointment-form .form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+.appointment-form .form-group input {
+  width: 88.5%;
+}
+
+.appointment-form .appointment-options .submit-btn {
+  margin-top: 10px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.appointment-form .appointment-options .submit-btn:hover {
+  background-color: #218838;
+}
+
+.appointment-form .appointment-options .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.appointment-form .appointment-options .cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.time-picker {
+  padding: 14px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, -webkit-transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s, -webkit-transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.time-picker:hover {
+  background-color: #218838;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.time-picker:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+/*# sourceMappingURL=cars.component.css.map */

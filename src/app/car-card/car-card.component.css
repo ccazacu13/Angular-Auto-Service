@@ -1,0 +1,74 @@
+.car-card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95vw;
+  height: 15vw;
+  overflow: scroll;
+  background: white;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px auto;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.car-card.inactive {
+  background-color: #fdc1c1;
+}
+
+.car-card:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.car-card .card-status {
+  background: #2c2c2c;
+  padding: 6px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.car-card .card-status .status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.car-card .card-status .status.active {
+  background-color: #28a745;
+}
+
+.car-card .card-status .status.inactive {
+  background-color: #c0392b;
+}
+
+.car-card .card-details .card-info {
+  padding-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.car-card .card-details .card-info h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: #333;
+}
+
+.car-card .card-details .card-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+/*# sourceMappingURL=car-card.component.css.map */

@@ -49,15 +49,15 @@
 </ul>
 <h3>Design</h3>
 <p align="center">
-  <img src="./images/clients.png" width="500" alt="clients preview" />
+  <img src="./images/clients.png" width="500" height="150" alt="clients preview" />
   <p>Clients page</p>
 </p>
 <p align="center">
-  <img src="./images/car_form.png" width="500" alt="add car form" />
+  <img src="./images/car_form.png" width="500" height="200" alt="add car form" />
   <p>Add car form</p>
 </p>
 <p align="center">
-  <img src="./images/user_assistance.png" width="500" alt="helpful user messages" />
+  <img src="./images/user_assistance.png" width="500" height="100" alt="helpful user messages" />
   <p>Helpful messages for users (edited)</p>
 </p>
 
